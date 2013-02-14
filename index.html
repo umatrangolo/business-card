@@ -1,38 +1,108 @@
 <html>
   <head>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
 
     <style type="text/css">
-      h1, h4, a { font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }
+
+      .card {
+        width: 640px;
+        height: 200px;
+        padding-top: 24px;
+        margin-top: 32px;
+        margin-left: 240px;
+        margin-right: 200px;
+        background: #eaefb5; /* Old browsers */
+        background: -moz-linear-gradient(top,  #eaefb5 0%, #e1e9a0 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaefb5), color-stop(100%,#e1e9a0)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #eaefb5 0%,#e1e9a0 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #eaefb5 0%,#e1e9a0 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #eaefb5 0%,#e1e9a0 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #eaefb5 0%,#e1e9a0 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaefb5', endColorstr='#e1e9a0',GradientType=0 ); /* IE6-9 */
+        border-left-width: 14px;
+        padding-left: 24px;
+        border-right-width: 10px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-right: 24px;
+        box-shadow: 10px 10px 5px rgb(55, 55, 58);
+        border-radius: 15px;
+      }
+
+      .main {
+        background: #3f4c6b; /* Old browsers */
+        background: -moz-linear-gradient(top,  #3f4c6b 0%, #3f4c6b 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f4c6b), color-stop(100%,#3f4c6b)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #3f4c6b 0%,#3f4c6b 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #3f4c6b 0%,#3f4c6b 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #3f4c6b 0%,#3f4c6b 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #3f4c6b 0%,#3f4c6b 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+      }
+
+      .name {
+        font-family: 'Droid Sans Mono', sans-serif;
+      }
+
+      .address {
+        padding-left: 64px;
+        font-family: 'Share Tech Mono', sans-serif;
+      }
+
+      .navigation {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        margin-left: 80px;
+      }
+
+      .email {
+        font-family: 'Share Tech Mono', sans-serif;
+      }
+
+      li, ul {
+        display: inline;
+        padding-right: 60px;
+      }
+
+      a {
+        font-family: 'Ubuntu Mono', sans-serif;
+      }
+
     </style>
   </head>
-  <body>
+  <body class="main">
 
-    <!-- Name and address -->
-    <table>
-      <col width = "600"/>
-      <col width = "240"/>
-      <tr>
-        <td>
-          <h1><b>Ugo Matrangolo<b></h1>
-        </td>
-        <td>
-          <h4>
-          28 Greenview, Station Road,<br/>Seabrook Manor, Portmarnock<br/> Co. Dublin<br/><br/>+353 (0)85 7047346
-          <br/><br/><b><a href="mailto:ugo.matrangolo@gmail.com">ugo.matrangolo@gmail.com</a></b>
-          </h3>
-        </td>
-      </tr>
-    </table>
+    <div class="card">
 
-    <!-- GPG public key -->
-    <a href="gpg-public-key.txt">GnuPG public key</a><br/>
+      <!-- Name and address -->
+      <table>
+        <tr>
+          <td>
+            <h1 class="name"><b>Ugo Matrangolo<b></h1>
+          </td>
+          <td class="address">
+            <h4>
+              28 Greenview, Station Road,<br/>Seabrook Manor, Portmarnock<br/> Co. Dublin<br/><br/>+353 (0)85 7047346
+              <br/><br/><b><a class="email" href="mailto:ugo.matrangolo@gmail.com">ugo.matrangolo@gmail.com</a></b>
+            </h4>
+          </td>
+        </tr>
+      </table>
 
-    <!-- resume -->
-    <a href="Ugo_Matrangolo_resume.pdf">Resume</a><br/>
+      <br/>
+      <hr/>
 
-    <!-- github -->
-    <a href="https://github.com/umatrangolo">Github</a>
+      <ul class="navigation">
+        <li><a href="gpg-public-key.txt">GnuPG public key</a></li>
+        <li><a href="Ugo_Matrangolo_resume.pdf">Resume</a></li>
+        <li><a href="https://github.com/umatrangolo">Github</a></li>
+        <li><a href="http://ie.linkedin.com/in/ugomatrangolo/">Linkedin</a></li>
+      </ul>
+    </div>
 
   </body>
 </html>
