@@ -38,11 +38,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-.address {
-    padding-left: 64px;
-    font-family: 'Share Tech Mono', sans-serif;
-}
-
 .navigation {
     margin: 0;
     padding: 0;
@@ -51,15 +46,7 @@
     margin-left: 80px;
 }
 
-.email {
-    font-family: 'Share Tech Mono', sans-serif;
-}
-
 li, ul {
     display: inline;
     padding-right: 60px;
-}
-
-a {
-    font-family: 'Ubuntu Mono', sans-serif;
 }
