@@ -1,11 +1,54 @@
 body {
-    background: #103a51;
+    background:#c3eef8;
+    color:#103a51;
+}
+
+.main {
+    margin-left: 100px;
 }
 
 .name {
-    margin-left: 100px;
     margin-top: 50px;
+    margin-bottom: 20px;
     font-family: 'Lato', sans-serif;
     font-size:500%;
-    color: whitesmoke;
+    font-weight: 300;
+    color: black;
+}
+
+.email {
+    font-family: 'Lato', sans-serif;
+    font-size: 150%;
+    font-weight: 100;
+    color: black;
+    margin-left: 50px;
+}
+
+
+.share-github {
+    width:100px;
+    height:100px;
+    vertical-align:middle;
+    text-indent:-99999px;
+    font-size:0;
+    display:inline-block;
+    background:transparent url("entypo_github.svg") no-repeat;
+}
+
+.share-github:hover {
+    background-image: url("entypo_github_circle.svg");
+}
+
+.share-linkedin {
+    width:100px;
+    height:100px;
+    vertical-align:middle;
+    text-indent:-99999px;
+    font-size:0;
+    display:inline-block;
+    background:transparent url("entypo_linkedin.svg") no-repeat;
+}
+
+.share-linkedin:hover {
+    background-image:url("entypo_linkedin_circle.svg");
 }
